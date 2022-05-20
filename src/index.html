@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delivery pricing, Расчёт стоимости доставки">
+    <title>zoo</title>
+    <link rel="icon" href="./img/dog_icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Доставка</h1>
+    </header>
+    <main class="main">
+        <section class="input">
+            <form action="/" method="POST" id="form">
+                <p class="distance">Расстояние в одну сторону, км</p>
+                <input type="text" name="distance" size="7" pattern="^0*[1-9]\d*$" required title="Целое число больше 0">
+                <input type="submit" value="Рассчитать" class="button">
+                <!-- <div>
+                    <button type="submit">Рассчитать</button>
+                </div> -->
+            </form>
+        </section>
+        <section class="output">
+            <p class="price">Стоимость <span>__</span> руб.</p>
+        </section>
+    </main>
+<script src="./script/script.js"></script>
+</body>
+
+</html>
