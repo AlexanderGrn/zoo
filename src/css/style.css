@@ -10,10 +10,30 @@ h1 {
     font-size: 1.5em;
 }
 
+input[name=distance] {
+    width: 100px;
+    border-radius: 5px;
+}
+
 .button {
     margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 span {
     font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+
+    input[name=distance] {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .button {
+        display: block;
+        margin: 15px auto;
+    }
 }
